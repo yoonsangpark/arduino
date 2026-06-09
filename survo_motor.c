@@ -12,12 +12,15 @@ void setup() {
   Serial.begin(115200);
 
   servo_main.attach(SERVO_MAIN_PIN);
+  servo_sub.attach(SERVO_SUB_PIN);
+
 }
 
 void loop() { 
 
   for (pos = 0; pos <= 180; pos += 10) {
     servo_main.write(pos);
+    servo_sub.write(pos);
   
     delay(1000);
     Serial.print("servo_main : ");
