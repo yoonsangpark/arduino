@@ -1,7 +1,5 @@
 #include <AFMotor.h>
 
-#include <AFMotor.h>
-
 AF_DCMotor motor(4);   // Port (1~4)
 
 void setup()
