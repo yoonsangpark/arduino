@@ -1,9 +1,9 @@
 #include <AFMotor.h>
 
-#define MPORT   4   // Port (1~4)
+#define MOTOR_PORT   4   // Port (1~4)
 #define MDELAY  250
 
-AF_DCMotor motor(MPORT);
+AF_DCMotor motor(MOTOR_PORT);
 
 void setup()
 {
