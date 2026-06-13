@@ -14,7 +14,7 @@ void setup() {
 
 void loop() { 
 
-  for (pos = 40; pos <= 80; pos += 20) {
+  for (pos = 40; pos <= 120; pos += 20) {
     servo_motor.write(pos);
   
     delay(1000);
