@@ -1,11 +1,14 @@
 #include <AFMotor.h>
 
-AF_DCMotor motor(4);   // Port (1~4)
+#define MPORT   4   // Port (1~4)
+#define MDELAY  250
+
+AF_DCMotor motor(MPORT);
 
 void setup()
 {
     Serial.begin(115200);
-    motor.setSpeed(200);  // Speed (0~255)
+    motor.setSpeed(150);  // Speed (0~255)
 }
 
 void loop()
@@ -14,15 +17,15 @@ void loop()
 
     Serial.println("FORWARD ...");
     motor.run(FORWARD);
-    delay(3000);
+    delay(MDELAY);
 
     motor.run(RELEASE);
-    delay(1000);
+    delay(MDELAY);
 
     Serial.println("BACKWARD ...");
     motor.run(BACKWARD);
-    delay(3000);
+    delay(MDELAY);
 
     motor.run(RELEASE);
-    delay(1000);
+    delay(MDELAY);
 }
