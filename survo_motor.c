@@ -1,29 +1,24 @@
 #include <Servo.h>
 
-#define SERVO_MAIN_PIN 10
-#define SERVO_SUB_PIN  11
+#define SERVO_PIN 10 //Servo1=10, Servo2=9
 
-Servo servo_main;
-Servo servo_sub;
+Servo servo_motor;
 
 int pos = 0;
 
 void setup() {
   Serial.begin(115200);
 
-  servo_main.attach(SERVO_MAIN_PIN);
-  servo_sub.attach(SERVO_SUB_PIN);
-
+  servo_motor.attach(SERVO_PIN);
 }
 
 void loop() { 
 
-  for (pos = 0; pos <= 180; pos += 10) {
-    servo_main.write(pos);
-    servo_sub.write(pos);
+  for (pos = 40; pos <= 80; pos += 20) {
+    servo_motor.write(pos);
   
     delay(1000);
-    Serial.print("servo_main : ");
+    Serial.print("servo_motor : ");
     Serial.println(pos);
   }
 }
