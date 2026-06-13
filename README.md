@@ -24,3 +24,22 @@ Arduino IDE
      └─ Include Library
     	 "Adafruit Motor Shield library"
 ```
+
+# 3. Bluetooth
+```
+Arduino UNO		BT(HC-06)
+----------------------
+5V			->	VCC
+GND			->	GND
+D10			->	TXD
+D11			->	RXD
+```
+
+```
+Arduion Bluetooth App
+Arrow Keys
+
+	1
+4		3
+	2
+```
