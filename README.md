@@ -2,7 +2,7 @@
 ```
 RED : 5V
 BLACK : GND
-YELLO : D10 (SERVO_MAIN_PIN)
+YELLO : D9 (SERVO_MAIN_PIN)
 ```
 
 # 2. DC Motor
